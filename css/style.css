@@ -1,0 +1,175 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   /*-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;*/
+}
+main{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.imagen{
+    width: 80px;
+    border-radius: 50%;
+}
+
+ /*para el color de fondo*/
+.encabezado{
+    background-color: rgba(223, 222, 222, 0.527);
+ }
+
+ /*para que mi logo este de un lado y mi menu del otro*/
+
+ .encabezado nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 12px 20px;
+}
+
+ /*para que aparezca la sombra en cada opcion del menu*/
+a:hover{
+    background-color: rgba(247, 179, 219, 0.192);
+}
+ /*para mover el nombre*/
+
+.titulo{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 50px;
+}
+/*footer*/
+.footer{
+    background-color: rgba(223, 222, 222, 0.521);
+    height: auto;
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 40px;
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer2 h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer2 p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.redes li{
+    margin: 0 10px;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes a i{
+    font-size: 1.1rem;
+    transition: color 4.s ease;
+}
+.redes a:hover i{
+    color: rgba(247, 179, 219, 0.048) ;
+}
+.boton{
+    background-color: rgba(128, 128, 128, 0.692);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.boton p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/*fin footer*/
+
+/*para la seccion ubicacion*/
+
+.informacion{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.informacion__img{
+    flex: 1 1 50%;
+   
+}
+.informacion__box{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 15px;
+}
+.informacion__titulo{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.informacion__descripcion{
+    font-size: medium;
+    font-weight: 200;
+}
+
+/*para la seccion galeria*/
+.gridgaleria{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.contenedor{
+    width: 100%;
+}
+.contenedor img{
+    width: 100%;
+}
+/*para hacerlo responsivo*/
+@media(min-wdth:1020px) {
+    .gridgaleria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+@media(min-wdth:768px) {
+    .gridgaleria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+@media(min-wdth:320px) {
+    .gridgaleria{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+    }
+}
