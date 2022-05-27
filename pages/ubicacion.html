@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicacion</title>
     <link rel="icon" href="../img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
@@ -29,7 +30,7 @@
             <section id="tarjeta" class="tarjeta"></section>
         
         <section id="informacion" class="informacion">
-        <picture class="informacion__img">
+        <picture class="informacion__img" data-aos="fade-right">
         <img src="../img/maps.jpg" alt="ubicacion">
         </picture>
          <article class="informacion__box">
@@ -53,6 +54,9 @@
        <p>copyright &copy;2022 Benditas</p>
        </div>
     </footer>
-     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
