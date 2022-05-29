@@ -50,7 +50,7 @@ a:hover{
 .titulo{
     position: absolute;
     bottom: 15%;
-    left: 5%;
+    left: 60%;
     font-size: 50px;
 }
 /*footer*/
@@ -172,4 +172,29 @@ a:hover{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, auto);
     }
+}
+/*para la seccion contacto*/
+.contenedora{
+    position: relative;
+    top: 10px;
+    width: 300px;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 50px;
+    border-radius: 20px;
+}
+/*para la imagen*/
+.icono{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+/*para el titulo*/
+.tituloo{
+     font-family: 'Times New Roman', Times, serif;
+     font-size: large;
+}
+/*para el boton*/
+.botonRegistrar{
+    background-color: rgb(221, 219, 219);
 }

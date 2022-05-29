@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <title>Contacto</title>
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header class="encabezado">
         <nav>
-           <div>
-                <img class="imagen"src="../img/logo.png" alt=logo>
-           </div>
+            <div>
+                <img class="imagen" src="../img/logo.png" alt=logo>
+            </div>
             <ul>
                 <li><a href="../index.html">Principal</a></li>
                 <li><a href="./ubicacion.html">Ubicacion</a></li>
@@ -22,40 +24,66 @@
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./promociones.html">Promociones</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                
-             </ul>
-         </nav>
+
+            </ul>
+        </nav>
     </header>
     <main>
-        <h4>CONTACTO</h4>
-        <p>TELEFONO: +54 9 351 8169297</p>
-        <address>benditasestetica@gmail.com</address>
-     
-    <form action=""  method="POST">
-      <label for="nombre">NOMBRE</label>
-      <input type="Nombre" name="Nombre">
-
-      <label for="email">CORREO ELECTRONICO</label>
-      <input type="email" name="email">
-
-      <input type="submit" value="enviar">
-
-    </form>
+        <div class="contenedora">
+            <div class="form-row">
+                <div class="form-group col-md-12 text-center">
+                    <img src="../img/usuario2.png" alt="icono">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label class="tituloo">Nombre:</label>
+                    <input type="text" class="form-control" name="Nombre" placeholder="Ingrese Nombre">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label class="tituloo">Apellido:</label>
+                            <input type="text" class="form-control" name="Apellido" placeholder="Ingrese Apellido">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label class="tituloo">Genero:</label>
+                            <select name="genero" class="form-control">
+                                <option value="" selected disabled>-- Seleccionar --</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label class="tituloo">Correo:</label>
+                            <input type="email" class="form-control" name="correo" placeholder="Ingrese Correo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="button" class="btn btn-lg btn-block botonRegistrar" value="Registrar">
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footer2">
-        <h2>GRACIAS POR ELEGIRNOS</h2>
-        <p>Hacerte sentir diosa, nos motiva</p>
-        
-        <ul class="redes">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-        </ul>
-       </div>
-       <div class="boton">
-       <p>copyright &copy;2022 Benditas</p>
-       </div>
+            <h2>GRACIAS POR ELEGIRNOS</h2>
+            <p>Hacerte sentir diosa, nos motiva</p>
+
+            <ul class="redes">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="boton">
+            <p>copyright &copy;2022 Benditas</p>
+        </div>
     </footer>
 </body>
+
 </html>
