@@ -47,11 +47,15 @@ a:hover{
 }
  /*para mover el nombre*/
 
-.titulo{
-    position: absolute;
-    bottom: 15%;
-    left: 60%;
-    font-size: 50px;
+.contenedortitulo{
+    max-width: 300px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.tituloB{
+    font-size: 5rem;
 }
 /*footer*/
 .footer{
@@ -142,37 +146,60 @@ a:hover{
 }
 
 /*para la seccion galeria*/
-.gridgaleria{
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+.gridGaleria{
     display: grid;
     width: 100vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
 }
-.contenedor{
+.contenedorGrid{
     width: 100%;
 }
-.contenedor img{
+.contenedorGrid img{
     width: 100%;
 }
-/*para hacerlo responsivo*/
-@media(min-wdth:1020px) {
-    .gridgaleria{
+@media(min-width:520px) {
+    .galeria .contenedor {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media(min-width:768px) {
+    .gridGaleria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+@media(min-width:1020px) {
+    .gridGaleria{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
     }
 }
-@media(min-wdth:768px) {
-    .gridgaleria{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
+
+@media(min-width:1024px) {
+    .galeria .contenedor {
+        grid-template-columns: repeat(4, 25%);
     }
 }
-@media(min-wdth:320px) {
-    .gridgaleria{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, auto);
+.contenedor {
+    width: 1024px;
+}
+
+@media(min-width:1200px) {
+    .contenedor {
+        width: 1200px;
     }
 }
+
 /*para la seccion contacto*/
 .contenedora{
     position: relative;
