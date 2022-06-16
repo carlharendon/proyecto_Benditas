@@ -1,0 +1,37 @@
+.encabezado{
+    background-color: rgba(223, 222, 222, 0.527);
+ }
+
+ .encabezado nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 12px 20px;
+}
+
+a:hover{
+    background-color: rgba(247, 179, 219, 0.192);
+}
+
+.contenedortitulo{
+    max-width: 300px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.tituloB{
+    font-size: 5rem;
+}

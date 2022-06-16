@@ -16,25 +16,25 @@ main{
 }
 
  /*para el color de fondo*/
-.encabezado{
+/*.encabezado{
     background-color: rgba(223, 222, 222, 0.527);
  }
 
  /*para que mi logo este de un lado y mi menu del otro*/
 
- .encabezado nav{
+/*.encabezado nav{
      display: flex;
      justify-content: space-around;
      align-items: center;
  }
 
-.encabezado nav ul{
+/*.encabezado nav ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-a{
+/*a{
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -42,23 +42,23 @@ a{
 }
 
  /*para que aparezca la sombra en cada opcion del menu*/
-a:hover{
+/*a:hover{
     background-color: rgba(247, 179, 219, 0.192);
 }
  /*para mover el nombre*/
 
-.contenedortitulo{
+/*.contenedortitulo{
     max-width: 300px;
     width: 100%;
     padding: 20px 20px;
     margin: 0 auto;
     margin-top: 10px;
-}
-.tituloB{
+}*/
+/*.tituloB{
     font-size: 5rem;
 }
 /*footer*/
-.footer{
+/*.footer{
     background-color: rgba(223, 222, 222, 0.521);
     height: auto;
     width: 100vw;
@@ -119,7 +119,7 @@ a:hover{
 
 /*para la seccion ubicacion*/
 
-.informacion{
+/*.informacion{
     display: flex;
     align-items: center;
     padding: 20px 20px;
@@ -143,7 +143,7 @@ a:hover{
 .informacion__descripcion{
     font-size: medium;
     font-weight: 200;
-}
+}*/
 
 /*para la seccion galeria*/
 .contenedor {
